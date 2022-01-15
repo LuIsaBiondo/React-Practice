@@ -3,27 +3,27 @@ import ReactDOM from 'react-dom'; // nos permite renderizar en el DOM
 
 const list = [
   {
-    id: 'a',
+    email: 'a',
     firstname: 'Robin',
     lastname: 'Wieruch',
-    year: 1988,
+    telefono: 1988,
   },
   {
-    id: 'b',
+    email: 'b',
     firstname: 'Dave',
     lastname: 'Davidds',
-    year: 1990,
+    telefono: 1990,
   },
 ];
 
 const ComplexList = () => (
   <ul>
     {list.map(item => (
-      <li key={item.id}>
-        <div>{item.id}</div>
+      <li key={item.email}>
+        <div>{item.email}</div>
         <div>{item.firstname}</div>
         <div>{item.lastname}</div>
-        <div>{item.year}</div>
+        <div>{item.telefono}</div>
       </li>
     ))}
   </ul>
