@@ -1,3 +1,5 @@
+import Lista from './Lista';
+
 const list = [
     {
       email: 'lucianabiondolillo@gmail.com',
@@ -24,3 +26,6 @@ const list = [
         telefono: 2615239610,
       },
   ];
+
+
+  export default list;
