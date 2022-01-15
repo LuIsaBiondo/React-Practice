@@ -1,20 +1,6 @@
 import React from 'react'; // importamos react
 import ReactDOM from 'react-dom'; // nos permite renderizar en el DOM
-
-const list = [
-  {
-    email: 'a',
-    firstname: 'Robin',
-    lastname: 'Wieruch',
-    telefono: 1988,
-  },
-  {
-    email: 'b',
-    firstname: 'Dave',
-    lastname: 'Davidds',
-    telefono: 1990,
-  },
-];
+import DatosLista from 'DatosLista';
 
 const ComplexList = () => (
   <ul>
