@@ -1,32 +1,20 @@
-import React from 'react'; // importamos react
-import ReactDOM from 'react-dom'; // nos permite renderizar en el DOM
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import Lista from './Lista';
 
-const list = [
-  {
-    email: 'a',
-    firstname: 'Robin',
-    lastname: 'Wieruch',
-    telefono: 1988,
-  },
-  {
-    email: 'b',
-    firstname: 'Dave',
-    lastname: 'Davidds',
-    telefono: 1990,
-  },
-];
-
-const ComplexList = () => (
-  <ul>
-    {list.map(item => (
-      <li key={item.email}>
-        <div>{item.email}</div>
-        <div>{item.firstname}</div>
-        <div>{item.lastname}</div>
-        <div>{item.telefono}</div>
-      </li>
-    ))}
-  </ul>
+ReactDOM.render(
+  <React.StrictMode>
+    <Lista />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
-export default ComplexList;
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

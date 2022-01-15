@@ -1,9 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import micomponente from '/components/micomponente.jsx'
-
-
-<ComplexList/>
 
 function App() {
   return (
