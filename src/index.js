@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Lista from './Lista';
+import list from './DatosLista';
 
 ReactDOM.render(
   <React.StrictMode>

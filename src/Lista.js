@@ -1,6 +1,6 @@
 import React from 'react'; // importamos react
 import ReactDOM from 'react-dom'; // nos permite renderizar en el DOM
-import DatosLista from './DatosLista';
+import list from './DatosLista';
 
 const ComplexList = () => (
   <ul>
