@@ -1,4 +1,3 @@
-import Lista from './Lista';
 
 const list = [
     {
@@ -24,6 +23,18 @@ const list = [
         firstname: 'Agustin',
         lastname: 'Lucero',
         telefono: 2615239610,
+      },
+      {
+        email: 'agustinaboedo@gmail.com',
+        firstname: 'Agustina',
+        lastname: 'Boedo',
+        telefono: 2615239123,
+      },
+      {
+        email: 'tomaslucero@gmail.com',
+        firstname: 'Tomas',
+        lastname: 'Lucero',
+        telefono: 2615239690,
       },
   ];
 
