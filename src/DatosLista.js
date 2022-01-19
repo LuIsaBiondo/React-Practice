@@ -36,6 +36,12 @@ const list = [
         lastname: 'Lucero',
         telefono: 2615239690,
       },
+      {
+        email: 'fagonzalez.nt@gmail.com',
+        firstname: 'Fer',
+        lastname: 'Gonzalez',
+        telefono: 33922052,
+      },
   ];
 
 
