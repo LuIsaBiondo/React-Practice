@@ -42,6 +42,12 @@ const list = [
     lastname: 'Gonzalez',
     telefono: 33922052,
   },
+  {
+    email: 'agosval.nt@gmail.com',
+    firstname: 'Val',
+    lastname: 'Agos',
+    telefono: 33922067,
+  },
 ];
 
 export default list;
