@@ -21,8 +21,8 @@ export default function BasicTable() {
           <TableRow>
             <TableCell>email</TableCell>
             <TableCell align="right">firstname</TableCell>
-            <TableCell align="right">lastname&nbsp;(g)</TableCell>
-            <TableCell align="right">telefono&nbsp;(g)</TableCell>
+            <TableCell align="right">lastname&nbsp;</TableCell>
+            <TableCell align="right">telefono&nbsp;</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
