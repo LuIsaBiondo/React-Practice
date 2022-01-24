@@ -9,20 +9,16 @@ import Paper from '@mui/material/Paper';
 import rows from './DatosLista';
 
 
-function createData(email, firstname, lastname, telefono) {
-  return { email, firstname, lastname, telefono };
-}
-
-export default function BasicTable() {
+export default function Lista() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>email</TableCell>
+            <TableCell align="left">email</TableCell>
             <TableCell align="right">firstname</TableCell>
-            <TableCell align="right">lastname&nbsp;</TableCell>
-            <TableCell align="right">telefono&nbsp;</TableCell>
+            <TableCell align="right">lastname</TableCell>
+            <TableCell align="right">phone</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -31,12 +27,10 @@ export default function BasicTable() {
               key={row.name}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
+              <TableCell align="left">{row.email}</TableCell>
               <TableCell align="right">{row.firstname}</TableCell>
               <TableCell align="right">{row.lastname}</TableCell>
-              <TableCell align="right">{row.telefono}</TableCell>
+              <TableCell align="right">{row.phone}</TableCell>
             </TableRow>
           ))}
         </TableBody>
