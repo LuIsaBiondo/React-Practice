@@ -1,5 +1,5 @@
 
-const list = [
+const rows = [
   {
     email: 'lucianabiondolillo@gmail.com',
     firstname: 'Luciana',
@@ -50,4 +50,4 @@ const list = [
   },
 ];
 
-export default list;
+export default rows;

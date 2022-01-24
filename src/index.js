@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Lista from './Lista';
+import BasicTable from './Lista';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Lista />
+    <BasicTable />
   </React.StrictMode>,
   document.getElementById('root')
 );
