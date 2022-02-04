@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Lista from './Lista';
+import Login from './components/login';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Lista />
+    <Login />
   </React.StrictMode>,
   document.getElementById('root')
 );
