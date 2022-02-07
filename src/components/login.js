@@ -5,7 +5,6 @@ import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Checkbox from '@mui/material/Checkbox';
 
-//ladjakhdkjasdkja
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
