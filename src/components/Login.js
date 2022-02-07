@@ -46,8 +46,8 @@ const Login = () => {
       <Link href="#">Sing Up</Link>
 
       <div>
-      <Checkbox {...label} defaultChecked />Remember Me
-    </div>
+        <Checkbox {...label} defaultChecked />Remember Me
+      </div>
     </Paper>
   );
 };
