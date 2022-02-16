@@ -1,13 +1,13 @@
 import React from "react";
 import { Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import Login from './components/Login';
+import Login from '../components/Login';
 
-function App() {
+function Validacion() {
   return (
     <div>
       <Formik
-        initialValues={{ Login.js }}
+        initialValues={{ Login }}
         validationSchema={Yup.object().shape({
           username: Yup.string()
             .min(1, "Your name is too short")
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Validacion;

@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Checkbox from '@mui/material/Checkbox';
-import App from './components/Validacion';
+import Validacion from '../components/Validacion';
 
 
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
