@@ -9,7 +9,7 @@ import Paper from '@mui/material/Paper';
 import rows from './DatosLista';
 
 
-export default function Lista() {
+function Lista() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -38,3 +38,5 @@ export default function Lista() {
     </TableContainer>
   );
 }
+
+export default Lista
