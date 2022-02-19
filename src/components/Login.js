@@ -45,6 +45,7 @@ function Login() {
               variant="outlined"
               label="Password"
               fullWidth
+              type="password"
               autoComplete="Write your password here"
               autoFocus
               {...register("Password", { required: "Required" })}
