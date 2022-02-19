@@ -8,7 +8,7 @@ import { Paper, Grid } from "@mui/material";
 import Link from "@mui/material/Link";
 import Checkbox from "@mui/material/Checkbox";
 
-export default function LoginPage() {
+function Login() {
   const {
     register,
     handleSubmit,
@@ -67,3 +67,5 @@ export default function LoginPage() {
     </Paper>
   );
 }
+
+export default Login;
