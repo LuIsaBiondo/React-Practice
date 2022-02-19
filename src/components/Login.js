@@ -1,63 +1,45 @@
 import React from "react";
-import { Paper, TextField, Grid } from "@mui/material";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
-import Checkbox from "@mui/material/Checkbox";
-import Box from "@mui/material/Box";
+import TextField from '@mui/material/TextField';
+import Container from '@mui/material/Container';
+import Button from '@mui/material/Button';
+import Box from '@mui/material/Box';
+import { useForm } from "react-hook-form";
 
-const label = { inputProps: { "aria-label": "Checkbox demo" } };
-
-const Login = () => {
-  const paperStyle = {
-    padding: 20,
-    height: "70vh",
-    width: 219,
-    margin: "20px auto",
-  };
-  const btnStyle = { margin: "8px 0", padding: 10, height: "70vh" };
-  return (
-    <Paper elevation={10} style={paperStyle} align="center">
-      <h2>Sign in</h2>
-      <Grid align="center" />
-      <Box
-        component="form"
-        sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
-        }}
-        noValidate
-        autoComplete="off"
-      >
-        <TextField
-          id="standard-basic"
-          label="Username"
-          placeholder="Enter username"
-          fullWidth
-          required
-        />
-        <TextField
-          id="standard-basic"
-          label="Password"
-          placeholder="Enter password"
-          type="password"
-          fullWidth
-          required
-        />
-      </Box>
-      <Stack spacing={2} direction="row">
-        <Button variant="contained" color="secondary" fullWidth>
-          Sing In
-        </Button>
-      </Stack>
-
-      <Link href="#">Sing Up</Link>
-
-      <div>
-        <Checkbox {...label} defaultChecked />
-        Remember Me
-      </div>
-    </Paper>
-  );
-};
-
-export default Login;
+export default function LoginPage(){
+    const {register, handleSubmit, formState: { errors },} = useForm()
+    const onSubmit = (data) => console.log(data)
+    return (
+    <Container maxWidth='xs'>
+        <h1>Welcome!</h1>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <Box mb={3}>
+            <TextField 
+                variant="outlined" 
+                label="Username" 
+                fullWidth 
+                autoComplete="Write your username here" 
+                autoFocus  
+                {...register("Username", {required: "Required"})}
+                error={!!errors?.Username}
+                helperText={errors?.Username ? errors.Username.message : null}
+            />
+            </Box>
+            <Box mb={3}>
+            <TextField 
+                variant="outlined" 
+                label="Password" 
+                fullWidth 
+                autoComplete="Write your password here" 
+                autoFocus  
+                {...register("Password", {required: "Required"})}
+                error={!!errors?.Password}
+                helperText={errors?.Password ? errors.Password.message : null}
+            />
+            </Box>
+            <Button type="submit" variant='contained' color='primary' fullWidhth>
+                Log in
+            </Button>
+        </form>
+    </Container>
+     );   
+}
