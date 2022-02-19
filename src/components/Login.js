@@ -40,7 +40,7 @@ export default function LoginPage() {
               helperText={errors?.Username ? errors.Username.message : null}
             />
           </Box>
-          <Box mb={3}>
+          <Box mb={1}>
             <TextField
               variant="outlined"
               label="Password"
@@ -52,16 +52,16 @@ export default function LoginPage() {
               helperText={errors?.Password ? errors.Password.message : null}
             />
           </Box>
+          <div align="left">
+          <Checkbox {...label} defaultChecked />
+          Remember Me
+        </div>
           <Box mb={3}>
           <Button type="submit" variant="contained" color="primary" fullWidhth>
             Log in
           </Button>
           </Box>
         </form>
-        <div>
-          <Checkbox {...label} defaultChecked />
-          Remember Me
-        </div>
         <Link href="#">Sing Up</Link>
       </Container>
     </Paper>
