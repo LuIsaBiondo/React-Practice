@@ -7,8 +7,10 @@ import { useForm } from "react-hook-form";
 import { Paper, Grid } from "@mui/material";
 import Link from "@mui/material/Link";
 import Checkbox from "@mui/material/Checkbox";
+import {useNavigate} from "react-router-dom";
 
 function Login() {
+  let navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -58,7 +60,7 @@ function Login() {
           Remember Me
         </div>
           <Box mb={3}>
-          <Button type="submit" variant="contained" color="primary" fullWidhth>
+          <Button type="submit" variant="contained" color="primary" fullWidth onClick={() =>{navigate("/lista")}}>
             Log in
           </Button>
           </Box>
