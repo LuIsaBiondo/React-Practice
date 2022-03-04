@@ -7,16 +7,24 @@ import { useForm } from "react-hook-form";
 import { Paper, Grid } from "@mui/material";
 import Link from "@mui/material/Link";
 import Checkbox from "@mui/material/Checkbox";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+
   let navigate = useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+
+  const onSubmit = (data) => {
+    console.log(data)
+    if (data) {
+      navigate("/lista");
+    }
+  };
+
   const paperStyle = {
     padding: 20,
     height: "70vh",
@@ -24,6 +32,7 @@ function Login() {
     margin: "20px auto",
   };
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
   return (
     <Paper elevation={10} style={paperStyle} align="center">
       <Container maxWidth="xs" style={paperStyle}>
@@ -56,13 +65,13 @@ function Login() {
             />
           </Box>
           <div align="left">
-          <Checkbox {...label} defaultChecked />
-          Remember Me
-        </div>
+            <Checkbox {...label} defaultChecked />
+            Remember Me
+          </div>
           <Box mb={3}>
-          <Button type="submit" variant="contained" color="primary" fullWidth onClick={() =>{navigate("/lista")}}>
-            Log in
-          </Button>
+            <Button type="submit" variant="contained" color="primary" fullWidth >
+              Log in
+            </Button>
           </Box>
         </form>
         <Link href="#">Sing Up</Link>
